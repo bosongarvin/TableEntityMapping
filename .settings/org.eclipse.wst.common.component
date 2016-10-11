@@ -2,7 +2,7 @@
     <wb-module deploy-name="TableEntityMapping">
         <wb-resource deploy-path="/" source-path="/WebRoot" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
-        <property name="context-root" value="TableEntityMapping"/>
         <property name="java-output-path" value="/TableEntityMapping/WebRoot/WEB-INF/classes"/>
+        <property name="context-root" value="/mapping"/>
     </wb-module>
 </project-modules>
