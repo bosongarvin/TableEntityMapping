@@ -74,9 +74,9 @@
 <div class="main">
 	<div class="info">
 		<p><input class="input" type="text" name="driver" id="driver" placeholder="driver" title="driver" value="com.mysql.jdbc.Driver"></p>
-		<p><input class="input" type="text" name="url" id="url" placeholder="url" title="url" value="jdbc:mysql://localhost:3306/test?characterEncoding=utf8"></p>
+		<p><input class="input" type="text" name="url" id="url" placeholder="url" title="url" value="jdbc:mysql://60.205.114.74:3306/hxycdb"></p>
 		<p><input class="input" type="text" name="username" id="username" placeholder="username" title="username" value="root"></p>
-		<p><input class="input" type="text" name="password" id="password" placeholder="password" title="password" value="root"></p>
+		<p><input class="input" type="text" name="password" id="password" placeholder="password" title="password" value="hxyc123"></p>
 		<p><input type="button" value="Get Tables" class="button" id="getTables"></p>
 		<div class="table-list"></div>
 		<p><input type="button" value="Create ResultMap" class="button" id="createResultMap"></p>
