@@ -34,7 +34,7 @@ $("[type=button]").click(function() {
 		var keywords = this.substring(this.indexOf("{") + 1, this.indexOf("}"));
 		var s = 
 			"<if test=\""+ keywords +" != null and "+ keywords +" != ''\">\n"+
-			"	"+ keywords +" = #{"+ keywords +"},\n"+
+			"	,"+ keywords +" = #{"+ keywords +"}\n"+
 			"</if>\n";
 		temp.push(s);
 	});
