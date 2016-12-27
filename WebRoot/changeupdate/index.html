@@ -3,22 +3,19 @@
 <head>
 <meta charset="utf-8">
 <title>Update SQL Mapper 添加条件</title>
+<link rel="stylesheet" href="../static/bootstrap/css/bootstrap.css">
 <style type="text/css">
 * {margin:0; padding:0;}
-textarea {
-	font-family:"Consolas";font-size:14px;width:90%;display:block;resize:vertical;margin:10px auto;
-	padding:5px;min-height:560px;
-}
-input {
-	width:90%;margin:10px auto;display:block;padding:5px;
-}
+textarea {font-family:"Consolas";font-size:14px;resize:vertical;min-height:560px;}
+input {width:90%;margin:10px auto;display:block;padding:5px;}
 </style>
 </head>
 
 <body>
-<textarea></textarea>
-<input type="button" value="Change">
+<textarea class="form-control" placeholder="这里输入"></textarea>
+<input type="button" value="Change" class="btn btn-primary btn-block">
 <script type="text/javascript" src="../static/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../static/bootstrap/js/bootstrap.js"></script>
 <script type="text/javascript">
 $("[type=button]").click(function() {
 	var source = $("textarea").val();
@@ -34,7 +31,7 @@ $("[type=button]").click(function() {
 		var keywords = this.substring(this.indexOf("{") + 1, this.indexOf("}"));
 		var s = 
 			"<if test=\""+ keywords +" != null and "+ keywords +" != ''\">\n"+
-			"	,"+ keywords +" = #{"+ keywords +"}\n"+
+			"	"+ keywords +" = #{"+ keywords +"},\r\n"+
 			"</if>\n";
 		temp.push(s);
 	});
